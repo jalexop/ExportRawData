@@ -211,9 +211,9 @@ for (k=0;k<Filelist.length;k++)
 									saveAs("tif", new_folder+sep+SAVE_NAME+"_Ch"+ch);
 									
 								}
+							}else{
+								print ("Selected image "+SAVE_NAME+" is not a multi-channel image");
 							}
-						}else{
-							print ("Selected image "+SAVE_NAME+" is not a multi-channel image");
 						}
 						run("Close All");
 				}
@@ -252,9 +252,9 @@ for (k=0;k<Filelist.length;k++)
 								saveAs("tif", new_folder+sep+SAVE_NAME+"_Ch"+ch);
 								
 							}
+						}else{
+							print ("Selected image "+SAVE_NAME+" is not a multi-channel image");
 						}
-					}else{
-						print ("Selected image "+SAVE_NAME+" is not a multi-channel image");
 					}
 					run("Close All");
 			}
