@@ -209,7 +209,7 @@ for (k=0;k<Filelist.length;k++)
 								for(ch=1;ch<=channels;ch++){
 									run("Duplicate...", "duplicate channels="+ch+"");
 									saveAs("tif", new_folder+sep+SAVE_NAME+"_Ch"+ch);
-									
+									close();
 								}
 							}else{
 								print ("Selected image "+SAVE_NAME+" is not a multi-channel image");
